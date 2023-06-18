@@ -3,10 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HelloComponent } from './tournament/hello/hello.component';
+import { RegistrationComponent } from './tournament/registration/registration.component';
+import { BracketsComponent } from './tournament/brackets/brackets.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HelloComponent,
+    RegistrationComponent,
+    BracketsComponent
   ],
   imports: [
     BrowserModule,
