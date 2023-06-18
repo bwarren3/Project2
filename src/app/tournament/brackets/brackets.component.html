@@ -13,7 +13,7 @@
         <h3>Match {{ i + 1 }}</h3>
 
         <div *ngIf="i === 0; else secondElseBlock">
-          <div>
+          <div style="display: inline">
             <input
               type="radio"
               value="{{ currentPlayers[i] }}"
@@ -22,7 +22,7 @@
             />
             <label for="{{ currentPlayers[i] }}">{{ currentPlayers[i] }}</label>
           </div>
-          <div>
+          <div style="display: inline">
             <input
               type="radio"
               value="{{ currentPlayers[i + 1] }}"
@@ -36,7 +36,7 @@
         </div>
 
         <ng-template #secondElseBlock>
-          <div>
+          <div style="display: inline">
             <input
               type="radio"
               value="{{ currentPlayers[i * 2] }}"
@@ -47,7 +47,7 @@
               currentPlayers[i * 2]
             }}</label>
           </div>
-          <div>
+          <div style="display: inline">
             <input
               type="radio"
               value="{{ currentPlayers[i * 2 + 1] }}"
