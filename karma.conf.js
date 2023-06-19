@@ -10,14 +10,14 @@ module.exports = function (config) {
       require('karma-firefox-launcher'),
       require('karma-spec-reporter'),
       require('karma-jasmine-html-reporter'),
-      require('karma-coverage'),
+      require('karma-coverage-istanbul-reporter'),
       require('@angular-devkit/build-angular/plugins/karma')
     ],
     client: {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
-    coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/project2'),
+    coverageIstanbulReporter: {
+      dir: require('path').join(__dirname, './coverage/Project2'),
       reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true
     },
@@ -26,7 +26,7 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: false,
-    browsers: ['FireFoxHeadless'],
+    browsers: ['FirefoxHeadless'],
     customLaunchers: {
       'FirefoxHeadless': {
         base: 'Firefox',

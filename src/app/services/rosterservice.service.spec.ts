@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { RosterService } from './roster.service';
+import { RosterService } from './rosterservice.service';
 
 describe('RosterService Test', () => {
   let service: RosterService;
